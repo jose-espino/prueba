@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejempo de entrada por teclado</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        var nombre;
+        var edad;
+        nombre = prompt("Ejemplo de entradas por teclado con js:\n\n Ingrese su nombre:");
+        if(nombre)
+            edad = prompt("Ejemplo de entradas por teclado con js\n\n: Ingrese su edad:");
+        
+        if(nombre)
+            document.write("Hola "+nombre);
+        else
+            document.write("Debe ingresar su nombre");
+        if(edad)
+            document.write(", gracias por decirnos que tienes "+edad+" años");
+
+    </script>
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+</body>
+</html>

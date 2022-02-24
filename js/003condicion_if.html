@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejemplo if</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <script>
+        var nombre;
+        var calificacion;
+        nombre = prompt('Ingrese su nombre');
+        if(nombre){
+            calificacion = prompt('Ingrese su calificación');
+            if(calificacion){
+                if(0 <= calificacion && calificacion < 6)
+                    document.write("Lo siento, "+nombre+", no has aprobado");
+                else if(6 <= calificacion && calificacion <= 10)
+                    document.write("Felicidades, "+nombre+", has aprobado");
+                else
+                    document.write("Error, intenta de nuevo");
+            }
+            else
+                document.write("Debe escribir su calificación");
+        }
+        else
+            document.write("Debe escribir su nombre");
+        
+    </script>
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+</body>
+</html>
